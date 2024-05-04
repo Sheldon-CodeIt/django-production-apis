@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -15,7 +14,7 @@ with open('./ml-models/mental_health_prediction/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 def Home(request):
-    return HttpResponse("Home");
+    return HttpResponse("Home")
 
 
 @csrf_exempt
